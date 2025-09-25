@@ -127,7 +127,7 @@
     <!-- Signup Section -->
     <section
       id="signup-section"
-      class="hidde opacity- transition-all duration-500 ease-in-out min-h-screen flex items-center justify-center px-6 pt-20 py-10"
+      class="hidden opacity-0 transition-all duration-500 ease-in-out min-h-screen flex items-center justify-center px-6 pt-20 py-10"
       style="
         background: radial-gradient(
             circle at center,
@@ -171,6 +171,7 @@
                 id="first-name"
                 type="text"
                 placeholder="John"
+                required
                 class="w-full text-[13px] bg-transparent border-b border-gray-400 text-white placeholder-gray-500 focus:border-purple-500 focus:ring-0 outline-none py-2 pl-6"
                 style="font-family: 'Poppins', sans-serif"
               />
@@ -206,6 +207,7 @@
               id="email"
               type="email"
               placeholder="you@example.com"
+              required
               class="w-full text-[13px] bg-transparent border-b border-gray-400 text-white placeholder-gray-500 focus:border-purple-500 focus:ring-0 outline-none py-2 pl-6"
               style="font-family: 'Poppins', sans-serif"
             />
@@ -222,6 +224,7 @@
               id="password"
               type="password"
               placeholder="********"
+              required
               class="w-full text-[13px] bg-transparent border-b border-gray-400 text-white placeholder-gray-500 focus:border-purple-500 focus:ring-0 outline-none py-2 pl-6 pr-10"
               style="font-family: 'Poppins', sans-serif"
             />
@@ -233,6 +236,20 @@
             ></i>
           </div>
 
+          <label
+            for="tc"
+            class="flex items-center space-x-2 text-gray-300 text-sm cursor-pointer"
+          >
+            <input
+              type="checkbox"
+              id="tc"
+              name="terms"
+              checked
+              class="h-4 w-4 text-red-500 focus:ring-purple-400 border-gray-600 rounded bg-transparent"
+            />
+            <span>Get regular emails on updates and promotions</span>
+          </label>
+
           <!-- Button -->
           <button
             type="submit"
@@ -241,7 +258,7 @@
           >
             Sign Up
             <span
-              class="inline-block transform transition-transform duration-300 group-hover:translate-x-2"
+              class="inline-block transform transition-transform duration-300 group-hover:translate-x-2 group-hover:-translate-y-2"
             >
               <i class="fa fa-rocket ml-1"></i>
             </span>
@@ -272,9 +289,7 @@
         <!-- Footer -->
         <p class="mt-6 text-gray-400 text-sm text-center">
           Already have an account?
-          <a href="login.html" class="text-purple-400 hover:underline"
-            >Log In</a
-          >
+          <a href="#" class="text-purple-400 hover:underline">Log In</a>
         </p>
       </div>
     </section>
